@@ -250,7 +250,7 @@ public final class HttpClientCodec extends CombinedChannelDuplexHandler<HttpResp
                 return;
             }
 
-            // check if it's an Header and its transfer encoding is not chunked.
+            // check if it's a Header and its transfer encoding is not chunked.
             if (msg instanceof LastHttpContent) {
                 requestResponseCounter.decrementAndGet();
             }
